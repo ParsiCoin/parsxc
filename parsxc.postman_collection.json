@@ -1426,6 +1426,65 @@
 					"response": []
 				},
 				{
+					"name": "upTrade",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "id",
+								"type": "text",
+								"value": "{{id}}"
+							},
+							{
+								"key": "TOKEN",
+								"type": "text",
+								"value": "{{token}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "price",
+									"value": "0.018",
+									"description": "price",
+									"type": "text"
+								},
+								{
+									"key": "market",
+									"value": "eth_btc",
+									"description": "market",
+									"type": "text"
+								},
+								{
+									"key": "num",
+									"value": "1",
+									"description": "quantity",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "1",
+									"description": "1=buy 2= sell",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://parsxc.com/Api/Exchange/upTrade",
+							"host": [
+								"https://parsxc.com"
+							],
+							"path": [
+								"Api",
+								"Exchange",
+								"upTrade"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "reject",
 					"request": {
 						"method": "POST",
